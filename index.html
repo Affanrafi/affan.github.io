@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AFFAN RAFI Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+      
+      
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Affan Rafiuddin </a>
+          <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+          </button>
+
+          <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav nav ml-auto">
+              <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+              <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+              <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+              <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+              <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section id="home-section" class="hero">
+          <div class="home-slider  owl-carousel">
+           <div class="slider-item ">
+            <div class="overlay"></div>
+             <div class="container">
+              <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+                <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.jpeg);">
+                 <div class="overlay"></div>
+                </div>
+                  <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                    <div class="text">
+                        <span class="subheading">Hello!</span>
+                        <h1 class="mb-4 mt-3">I'm <span>Affan Rafiuddin</span></h1>
+
+                        <!-- Element to contain animated typing -->
+                        <span id="typing-animation"></span>
+
+                        <script>
+
+                        // Initialize the typing animation
+                        const typingAnimationElement = document.getElementById('typing-animation');
+
+                        // Create an array of typing text
+                        const typingTexts = [
+                        'Mechanical Engineer  ',
+                        
+                        ];
+
+                        // Create a function to display the typing animation for a given text
+                        function playTypingAnimation(text) {
+                        // Loop through each character and add it to the element
+                        for (let i = 0; i < text.length; i++) {
+                            setTimeout(() => {
+                            typingAnimationElement.textContent += text[i];
+                            }, i * 200); // Increase the delay to slow down the typing animation
+                        }
+
+                        // Once the animation is complete, reset the text and start over
+                        setTimeout(() => {
+                            typingAnimationElement.textContent = '';
+                            playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                        }, text.length * 200);
+                        }
+
+                        // Start the typing animation loop
+                        playTypingAnimation(typingTexts[0]);
+
+                        </script>
+
+                        <br>
+                        <br>
+                        <h2> Sr Solar Project Engineer</h2>
+                        <!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+                        <!-- <br> -->
+                        <p><a href="https://www.linkedin.com/in/affan-rafi-9a86a81a3?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+                            <a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/MY%20WORK.pdf" class="btn btn-primary py-3 px-4">MY WORKS</a></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="row d-flex align-items-stretch">
+                <!-- <div class="row d-flex"> -->
+                    <div class="col-md-6 col-lg-5 d-flex">
+                        <div class="img-about img d-flex align-items-stretch">
+                            <div class="overlay">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-5">
+                                      <div class="about-img">
+                                        <img src="images/about-me.jpeg" class="img-fluid rounded b-shadow-a" alt="">
+                                      </div>
+                                    </div>
+                                    <!-- Details next to profile image -->
+                                    <div class="col-sm-6 col-md-7">
+                                      <div class="about-info">
+                                        <p><span class="title-s">Name: </span> <span>Affan Rafiuddin</span></p>
+                                        <p><span class="title-s">Job Role: </span> <span>Sr. Solar Project Engineer</span></p>
+                                        <p><span class="title-s">Experience: </span> <span>6 Years </span></p>
+                                        <p><span class="title-s">Address: </span> <span>Jeddah, Saudi Arabia</span></p>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                <div class="skill-mf">
+                                    <p class="title-s">Skills</p>
+                                    <span>Engineering Support</span> <span class="pull-right"></span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                    
+                                    <span>Technical Troubleshooting</span> <span class="pull-right"></span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="85" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                    
+                                    <span>Quality Analysis</span> <span class="pull-right"></span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 96%" aria-valuenow="90" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                    
+                                    <span>AutoCad</span> <span class="pull-right"></span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 94%" aria-valuenow="85" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                    
+                                    <span>Excel Proficiency</span> <span class="pull-right"></span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 93%" aria-valuenow="80" aria-valuemin="0"
+                                            aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+                        <div class="row justify-content-start pb-3">
+                            <div class="col-md-12 heading-section ftco-animate">
+                                
+                                <h1 class="big">About</h1>
+                                <h2 class="mb-4">About Me</h2>
+                                
+                                <p>Reliable Engineer with 6 years of experience in the Renewable Energy and Mechanical Engineering sectors. Skilled in Technical, Management, Engineering, and Strategic Planning. Strong operations professional with a Bachelor's degree in Mechanical Engineering, Member of Saudi Council of Engineers, Member ID: 1095544 
+                                    .</p>
+                                <ul class="about-info mt-4 px-md-0 px-2">
+                                    <li class="d-flex"><span>Domain:</span> <span>Renewable Energy, Solar PV Systems, HVAC Systems  </span></li>
+                                    <li class="d-flex"><span>Education:</span> <span>B.E Mechanical Engineering, Osmania University </span></li>
+                                    <li class="d-flex"><span>Language:</span> <span>English, Arabic</span></li>
+                                    <li class="d-flex"><span>Skills:</span> <span> AutoCad, PVsyst, Helioscope, Excel </span></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="counter-wrap ftco-animate d-flex mt-md-3">
+                            <div class="text">
+                                <p class="mb-4">
+                                    <span class="number" data-number="12">0</span> <span>+</span>
+                                    <span>&nbsp; Projects completed</span>
+                                </p>
+                                <p><a href="https://www.linkedin.com/in/affan-rafi-9a86a81a3?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+        <div class="container">
+            <div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Mechanical Engineer, specialist in a field of Renewable Energy and Energy Efficiency. Passionate and enthusiastic in Technical Projects subjected to Solar Systems.</p>
+          </div>
+        </div>
+
+        <div class="row">
+            <h1 class="big-4">Experience</h1>
+            <div class="underline"></div>
+        </div>
+        <br>
+        
+        <div class="row">
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">2025-Present</span>
+                        <h2>Senior Solar Engineer</h2>
+                        
+                        <span class="position">OMAS, </span>
+                        <span class="mt-4"> Jeddah, Saudi Arabia </span>
+                            <ul>
+
+                                <li>Coordinate with engineering, procurement, construction, and site teams to ensure smooth project execution..</li>
+                                <li>Monitor project progress, timelines, quality, and technical requirements to ensure successful delivery</li>
+                                <li>Contribute to the successful delivery of solar projects while maintaining focus on efficiency, quality, and client requirements</li>
+                                                                <li>Prepare and maintain project reports, documentation, progress updates, and technical records</li>
+
+                                                            <li>Ensure project activities are carried out in compliance with safety, quality, and applicable engineering standards.</li>
+
+</ul>
+                          </p>
+                    </div>
+
+                </div>
+
+                
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">2022-2025</span>
+                        <h2>Mechanical Project Engineer</h2>
+                        <span class="position">Care Solutions,</span>
+                        <span class="mt-4"> Riyadh, Saudi Arabia</span>
+                            <ul>
+
+                                <li>Installation, Testing and Commissioning of FCU’s with hook up connections, piping 
+and duct works .</li>
+                                
+                                <li>Installation, Testing and Commissioning of VRF’s with copper piping and duct works.</li>
+
+                                <li> Installation of Solar Hot Water Copper Piping , Primary and Secondary Circuits 
+including Calorifier.</li>
+                                <li> Installation of Sewage lines UPVC and Sewage pumps and tanks.</li>
+                                <li> Installation of Fire fighting system including pump station, piping, sprinklers, smoke 
+and heat detectors with final termination to Alarm control Panel.</li>
+                                <li>Installation of Centrifugal pumps and PPR pipe for Water supply, including Primary 
+and Secondary circuit.</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">2019-2022</span>
+                        <h2>Technical Project Engineer</h2>
+                        <span class="position">Integrated International Power Company</span>
+                            <ul>
+
+                                <li>Completed over 1MWp Solar ON - Grid Projects.</li>
+                                <li>Improving the quality of Projects based on IEC Standards</li>
+                                <li>Commissioning and Testing of Solar Plant - IEC62446.</li>
+                                <li>Designing of Solar ON-Grid system with PV Syst & Heliscope.</li>
+                                <li>Generating Technical Submittal and Feasibility study, ROI Period and savings calculation. </li>
+                                <li>Procurement of materials required during execution. </li>
+                                <li>Installation of Solar OFF Grid stations for Traffic Monitoring. Completed over 1MWp Solar ON - Grid Projects.</li>
+                                <li>Installation of Solar OFF Grid Mobility station for E Bikes. Improving the quality of Projects based on IEC Standards.</li>
+                                <li>Complete Installation, Testing and Commissioning of 850Kwp ON Grid Project. (SABIC Head Quarters Project).</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+            <h1 class="big-4">Education</h1>
+            <div class="underline"></div>
+        </div>
+        <br>
+            <div class="column d-flex justify-content-center">
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">2015-2019</span>
+                        <h2> Mechanical Engineering </h2>
+                        <span class="position"> Osmania University</span>
+                        <p Hyderabad, India.</p>
+                    </div>
+                </div>
+
+            
+                </div>
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-6 text-center ftco-animate">
+                    <p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are some of the key projects from my Professional Experience</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/Project%20-1%20.pdf" class="block-20 zoom-effect" style="background-image: url('images/Picture1.PNG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/Project%20-1%20.pdf">AMAZON, Jeddah</a></h3>
+                <p>A Rooftop Solar PV project delivered as a Turnkey EPC project to support clean and renewable energy generation. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/Project_2.pdf" class="block-20 zoom-effect" style="background-image: url('images/Picture2.PNG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/Project_2.pdf">Amazon Riyadh Solar PV</a></h3>
+                <p>Solar PV Installation project focused on delivery a reliable and efficient energy solution for Amazon’s Riyadh facility.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry">
+              <a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/project-3.pdf" class="block-20 zoom-effect" style="background-image: url('images/Picture3.PNG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/project-3.pdf">Golden Chicken Solar PV</a></h3>
+                <p>A Solar PV project designed to harness clean energy and reduce conventional power consumption at the Golden Chicken facility  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">  
+            <div class="col-md-4 d-flex ftco-animate">
+                <div class="blog-entry justify-content-end">
+             <a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/project-4.pdf" class="block-20 zoom-effect" style="background-image: url('images/Picture4.PNG');">
+                </a>
+                <div class="text mt-3 float-right d-block">
+  
+                  <h3 class="heading"><a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/project-4.pdf">Al Jomaih Shell Lubricant Factory</a></h3>
+                  <p>Solar PV installation for an industrial lubricant manufacturing factory, Designed to maximize on-site renewable energy generation and improve energy efficiency. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex ftco-animate">
+                <div class="blog-entry justify-content-end">
+                <a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/project-5.pdf" class="block-20 zoom-effect" style="background-image: url('images/Picture5.PNG');">
+                </a>
+                <div class="text mt-3 float-right d-block">
+  
+                  <h3 class="heading"><a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/project-5.pdf">Qiddiya Six flag solar on grid ground mount </a></h3>
+                  <p>Project involved the deployment of a utility-scale solar mounting solution designed for reliable and efficient photovoltaic energy generation</p>
+                </div>
+              </div>
+            </div>
+       <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry">
+              <a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/project-6.pdf" class="block-20 zoom-effect" style="background-image: url('images/Picture6.PNG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/project-6.pdf">SABIC ON Grid  Solar Project</a></h3>
+                <p>The project involved solar PV system design, equipment integration, installation, testing, and commissioning. timeline and outcome </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/project-7.pdf" class="block-20 zoom-effect" style="background-image: url('images/Picture7.PNG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/project-7.pdf">Solar off Grid Container for Weather stations</a></h3>
+                <p>Engineered a stand-alone solar power container solution to provide reliable, continuous energy for remote weather monitoring stations</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/project-8.pdf" class="block-20 zoom-effect" style="background-image: url('images/Picture8.PNG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/project-8.pdf">Solar traffic monitoring systen</a></h3>
+                <p>Developed a solar-powered traffic monitoring solution for remote and infrastructure locations where conventional grid power is unavailable or impractical</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry">
+              <a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/project-9.pdf" class="block-20 zoom-effect" style="background-image: url('images/Picture9.PNG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/project-9.pdf">Solar off grid container for EV Vehicles</a></h3>
+                <p>Designed and delivered an off-grid solar container solution supporting electric vehicle (EV) applications  to provide an independent power source for EV charging infrastructure </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/project-10.pdf" class="block-20 zoom-effect" style="background-image: url('images/Picture10.PNG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/project-10.pdf">Solar off Grid containers for weather monitoring systems</a></h3>
+                <p>Implemented a stand-alone solar energy solution for weather monitoring systems, providing dependable power to remote sensing, data acquisition, communication, and monitoring equipment</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/project-11.pdf" class="block-20 zoom-effect" style="background-image: url('images/Picture11.PNG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/project-11.pdf">Solar Water Heater – KAFD </a></h3>
+                <p>Solar thermal project at King Abdullah Financial District (KAFD) utilizing solar energy for efficient water heating. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry">
+              <a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/project-12.pdf" class="block-20 zoom-effect" style="background-image: url('images/Picture12.PNG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="file:///C:/Users/fizaz/Desktop/Portfolio-Affan/project-12.pdf">STC Rooftop Project </a></h3>
+                <p>Rooftop solar PV installation for STC, utilizing available rooftop space to generate clean electricity and improve the facility's renewable energy contribution. </p>
+              </div>
+            </div>
+    </section>
+      <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+            <!-- <div class="container"> -->
+                <div class="row justify-content-center">
+                    <div class="col-md-7 ftco-animate text-center">
+                        <h2><span>  </span> </h2>
+                        <div class="heading"> <h4> MY WORK DOES'NT END WHEN THE SYSTEM GOES LIVE, IT BEGINGS WITH THE IMPACT IT CREATES !</h4>
+                        <br>
+                        <p><a href="" class="btn btn-primary py-3 px-5"></a></p>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+    </section>
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="icon-map-signs"></span>
+                </div>
+                <h3 class="mb-4">Address</h3>
+                <p>Jeddah, Saudi Arabia</p>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="icon-phone2"></span>
+                </div>
+                <h3 class="mb-4">Contact Number</h3>
+                <p><a href="tel://0101010101">+966 50 441 7091</a></p>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="icon-paper-plane"></span>
+                </div>
+                <h3 class="mb-4">Email Address</h3>
+                <p><a href="mailto:info@yoursite.com">affanrafi10@gmail.com</a></p>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="icon-globe"></span>
+                </div>
+                <h3 class="mb-4">Download Resume</h3>
+                <p><a href="#">resumelink</a></p>
+              </div>
+          </div>
+
+          
+ </section>
+
+    <footer class="ftco-footer ftco-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+  
+            
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
